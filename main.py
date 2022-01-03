@@ -31,7 +31,4 @@ async def read_root(assignment_file: UploadFile = File(...)):
     print(best_average)
     return {"top_product": best_average[2], "best_average":best_average[3].split('\r')[0]}
 
-@app.get('/test')
-def test():
-    return {"Hello": "World"}
 
